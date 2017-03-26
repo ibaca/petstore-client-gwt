@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN" "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
+<module rename-to="client">
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.intendia.gwt.autorest.AutoRest"/>
+    <inherits name="com.intendia.rxgwt.RxGwt"/>
+    <set-property name="compiler.useSourceMaps" value="true"/>
+    <set-configuration-property name="includeSourceMapUrl" value="src/__HASH___sourceMap__FRAGMENT__.json"/>
+    <define-configuration-property name="applicationId" is-multi-valued="false"/>
+    <entry-point class="petstore.client.Client"/>
+</module>
