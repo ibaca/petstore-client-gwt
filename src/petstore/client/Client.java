@@ -3,7 +3,6 @@ package petstore.client;
 import static java.util.Collections.singletonList;
 
 import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.RootPanel;
@@ -14,7 +13,7 @@ public class Client implements EntryPoint {
 
     @Override public void onModuleLoad() {
         Petstore api = new Petstore_RestServiceModel(() -> new RequestResourceBuilder()
-                .path(Window.Location.getProtocol() + "//petstore.swagger.io/"));
+                .path("http://petstore.swagger.io/"));
 
         FlowPanel container = new FlowPanel(); container.setStyleName("container"); RootPanel.get().add(container);
         FlowPanel row = new FlowPanel(); row.setStyleName("row"); container.add(row);
