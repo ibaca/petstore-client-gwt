@@ -12,8 +12,7 @@ import com.intendia.gwt.autorest.client.RequestResourceBuilder;
 public class Client implements EntryPoint {
 
     @Override public void onModuleLoad() {
-        Petstore api = new Petstore_RestServiceModel(() -> new RequestResourceBuilder()
-                .path("http://petstore.swagger.io/"));
+        Petstore api = new Petstore_RestServiceModel(() -> new RequestResourceBuilder().path("//petstore.swagger.io/"));
 
         FlowPanel container = new FlowPanel(); container.setStyleName("container"); RootPanel.get().add(container);
         FlowPanel row = new FlowPanel(); row.setStyleName("row"); container.add(row);
